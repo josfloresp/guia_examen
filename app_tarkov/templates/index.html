@@ -1,0 +1,105 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <header>
+    <div  class="logo">
+      
+        <img src="{% static 'img/Escape-from-Tarkov-Logo.png' %}" alt="logo">
+        <h2 class="nombre-pagina">Inicio</h2> 
+    </div>
+    <nav>
+        <a href="{% url 'Mapas' %}" class="nav-link">Mapa</a>
+        <a href="{% url 'Armor' %}" class="nav-link">Armor</a>
+        <a href="{% url 'Ammo' %}" class="nav-link">Ammo</a>
+        <a href="{% url 'Bosses' %}" class="nav-link">Bosses</a>
+        <a href="{% url 'login' %}" class="nav-link">login</a>
+        <a href="{% url 'formulario' %}" class="nav-link">formulario</a>
+        <a href="{% url 'api' %}" class="nav-link">api</a>
+        <a href="{% url 'registro_list' %}" class="nav-link">registro</a>
+
+    </nav>
+
+
+
+</header>
+      
+    <div class="container">
+      <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                
+                <img src="{% static 'img/tarkov1.jpg' %}"class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                
+                <img src="{% static 'img/tarkov2.jpeg' %}" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                
+                <img src="{% static 'img/tarkov3.jpg' %}" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
+    <div class="section">
+      <div class="parrafo">
+          <h1>¿Que es Escape From Tarkov?</h1>
+          <p>
+            Escape From Tarkov es un videojuego de disparos en primera persona y de supervivencia desarrollado por la compañía rusa Battlestate Games. El juego se centra en una ciudad ficticia llamada Tarkov, que se encuentra en Rusia y que ha sido sellada por las autoridades después de un conflicto político y militar.
+            <br>
+            Escape From Tarkov se caracteriza por su alto nivel de realismo y complejidad, con elementos como la gestión de inventario, la recolección de recursos y la interacción con NPCs y otros jugadores que afectan directamente a la experiencia de juego. El juego también cuenta con un sistema de daño realista, lo que significa que los jugadores pueden sufrir lesiones que pueden afectar su capacidad para moverse y luchar, lo que añade aún más a la tensión y al realismo del juego.
+          </p>
+  
+      </div>
+  </div>
+    <div class="section">
+      <div class="parrafo">
+        <h1>¿Cúal es el valor del videojuego?</h1>
+        <p>
+   
+          Este juego tiene diferentes precios.
+          <br>
+          -Estardar 44.99$
+          <br>
+          -Left Behind 74.99$
+          <br>
+          -Escape From Tarkov Edition 99.99$
+          <br>
+          -Edge for Darkness 139.99$
+          <br>  
+          <br>
+          Una de las mas accesibles es la Estandar y es la mas recomendada por la comunidad.
+          <br>
+        </p>
+        
+        <img src="{% static 'img/valor.png' %}" alt="Valor">
+      </div>
+</div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+<!-- enlazamos con nuestro JS  -->
+<script src="js/app.js"></script>
+</html>

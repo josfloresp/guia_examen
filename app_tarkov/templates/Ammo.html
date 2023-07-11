@@ -1,0 +1,106 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'css/ammo.css' %}">
+    
+    <title>Tier ammo</title>
+
+  </head>
+  <body>
+      <header>
+          <div  class="logo">+
+            <img src="{% static 'img/Escape-from-Tarkov-Logo.png' %}" alt="logo">
+              <h2 class="nombre-pagina">Tier Ammo</h2> 
+          </div>
+          <nav>
+              <a href="{% url 'index' %}" class="nav-link">Mapa</a>
+              <a href="{% url 'Mapas' %}" class="nav-link">Mapa</a>
+              <a href="{% url 'Armor' %}" class="nav-link">Armor</a>
+              <a href="{% url 'Bosses' %}" class="nav-link">Bosses</a>
+              <a href="{% url 'login' %}" class="nav-link">login</a>
+          </nav>
+  
+  
+  
+      </header>
+      
+  </div>
+  <div class="section">
+      <div class="parrafo">
+          <h1>5.45x39</h1>
+          <p>
+            Estas balas son una del calibre mas accesible en el juego, no son las mejores ni las peores.
+            <br>
+            Se usan en armas como las siguientes: AK-74,AK-74U,AKSM, ect.
+         
+          </p>
+  
+      </div>
+      
+      <img src="{% static 'img/5.45x39.png' %}" alt="5.45x39">
+  </div>
+  
+  <div class="section">
+      <div class="parrafo">
+          <h1>5.56x45</h1>
+          <p>
+              El siguiente calibre del juego, es una de mas mejores balas para usar en armas automaticas, son accesibles y ademas muy baratas.
+              <br>
+              Se usan en armas como las siguientes:M4A1,HK,MDR.45,AK-101,ect
+
+         
+          </p>
+  
+      </div>
+      
+      <img src="{% static 'img/5.56x45.png' %}" alt="5.56x45">
+  </div>
+  <div class="section">
+    <div class="parrafo">
+        <h1>7.62x39</h1>
+        <p>
+          Este calibre es uno de los mejores del juego, dificil de conseguir debido a las caracteristicas de el calibre, muy caro, pero muy confiable, sin lugar a duda esta en el podio de los mejores calibres actualmente.      
+          <br>
+          Se usan en armas como las siguientes:AKM,RD-704,MK47 MUTANT, SKS, ect.
+        </p>
+
+    </div>
+    
+    <img src="{% static 'img/7.62x39.png' %}" alt="7.62x39">
+</div>
+<div class="section">
+  <div class="parrafo">
+      <h1>7.62x51</h1>
+      <p>
+        El siguiente calibre es el seguno mejor del juego, es una bala muy potente, practicamente facil de conseguir, medianamente caro, pero con mucho daño y en armas muy buenas, para no decir armas metas,
+
+        <br>
+        Se usan en armas como las siguientes:RSASS,SR-25,MRD7.62,HK G28, ect.
+      </p>
+
+  </div>
+  
+  <img src="{% static 'img/7.62x51.png' %}" alt="7.62x51">
+</div>
+  <div class="section">
+    <div class="parrafo">
+      <h1>12.7x55</h1>
+      <p>
+        Este calibre sin lugar a duda es el mejor del juego actualmente, ya que la bala mata de 1 sola en el pecho, bala dificil de conseguir, ya que solo se craftea, ademas de un valor muy alto,
+        <br>
+        Se usan en armas como las siguientes:Ash-12 y revolver.12,7.
+      </p>
+
+    </div>
+  
+  <img src="{% static 'img/12.7x55.png' %}" alt="12.7x55">
+</div>
+  
+  </body>
+  </html>

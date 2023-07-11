@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'stylelist.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro List</title>
+</head>
+<body>
+    <h1>Lista de Registros</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Email</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for registro in registros %}
+            <tr>
+                <td>{{ registro.id }}</td>
+                <td>{{ registro.nombre }}</td>
+                <td>{{ registro.email }}</td>
+                <td>
+                    <a href="{% url 'registro_edit' registro.id %}">Editar</a>
+                    <a href="{% url 'registro_delete' registro.id %}">Eliminar</a>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{% url 'registro_create' %}">Crear Registro</a>
+</body>
+</html>

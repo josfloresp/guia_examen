@@ -1,0 +1,105 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'css/stylemapa.css' %}">
+    
+    <title>Mapas</title> 
+</head>
+<body>
+    <header>
+      <div  class="logo">
+        
+        <img src="{% static 'img/Escape-from-Tarkov-Logo.png' %}" alt="logo">
+        <h2 class="nombre-pagina">Mapas
+        </h2> 
+      </div>
+      <nav>
+
+        <a href="{% url 'Mapas' %}" class="nav-link">Mapa</a>
+        <a href="{% url 'Armor' %}" class="nav-link">Armor</a>
+        <a href="{% url 'Ammo' %}" class="nav-link">Ammo</a>
+        <a href="{% url 'Bosses' %}" class="nav-link">Bosses</a>
+        <a href="{% url 'login' %}" class="nav-link">login</a>
+        <a href="{% url 'formulario' %}" class="nav-link">formulario</a>
+        <a href="{% url 'api' %}" class="nav-link">api</a>
+        
+    </nav>
+  </header>
+</div>
+<div class="section">
+    <div class="parrafo">
+        <h1>Mapa: Customs</h1>
+        <p>
+          Customs es uno de los mapas principales de "Escape from Tarkov". Se trata de un entorno urbano en el que los jugadores se enfrentan en una batalla por la supervivencia en un territorio controlado por facciones enemigas. Es un mapa desafiante pero emocionante que ofrece a los jugadores una gran variedad de situaciones y desafíos.
+        </p>
+
+    </div>
+    
+    <img src="{% static 'img/custom.png' %}" alt="custom">
+</div>
+
+<div class="section">
+    <div class="parrafo">
+        <h1>Mapa: interchange</h1>
+        <p>
+          El mapa "interchange" es un mapa con 2 extracciones, una en cada punta del mapa. En este, aparece uno de los Bosses más difíciles del juego, Killa. Es un mapa donde hay un supermercado gigante al medio de todo, tiene un estacionamiento subterráneo y muchas tiendas para lotear.
+        </p>
+
+    </div>
+    
+    <img src="{% static 'img/interchange.jpg' %}" alt="interchange">
+    
+</div>
+<div class="section">
+  <div class="parrafo">
+      <h1>Mapa: Reserva</h1>
+      <p>
+        Reserva es uno de los mapas principales del juego, junto con Customs, en este tiene una extracción muy dificil de sobrevivir debido a la gente que campea la zona,
+        En este mapa aparece el Boss más difícil del juego dicho por la comunidad, Glukhar.
+  
+      </p>
+
+  </div>
+  
+  <img src="{% static 'img/reserva.jpg' %}" alt="reserva">
+</div>
+<div class="section">
+  <div class="parrafo">
+      <h1>Mapa: Shorline</h1>
+      <p>
+        Shorline es uno de los mapas más complicados del juego, por lo cual es uno de los principales mapas en donde se hacen las quest, en este mapa, hay un edificio en la cual hay muchas habitaciones, en estas existe unos de los respawns más grandes de ledx, un item muy valioso en el juego.
+        Además, en este mapa aparece un Boss llamado , Sanitar, el cual está acompañado de 2 guardias.
+
+  
+      </p>
+
+  </div>
+  
+  <img src="{% static 'img/shorline.jpg' %}" alt="shorline">
+</div>
+<div class="section">
+  <div class="parrafo">
+      <h1>Mapa: Factory</h1>
+      <p>
+ 
+        Este mapa es uno de los más reducidos a nivel de espacio a comparación de los demás, en este mapa la mayoría de los jugadores va solo al pvp.
+        En factory aparece un Boss llamado Tagilla, el cual no está acompañado de guardias, solo está él y su martillo.
+
+  
+      </p>
+
+  </div>
+  
+  <img src="{% static 'img/factory.png' %}" alt="factory">
+  
+</div>
+
+     
+</body>
+</html>

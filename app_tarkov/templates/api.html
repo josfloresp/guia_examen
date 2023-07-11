@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+ 
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="{% static 'css/api.css' %}">
+    <title>Pokemon API</title>
+  </head>
+  <body>
+      <nav>
+        <a href="{% url 'index' %}" class="nav-link">Mapa</a>
+        <a href="{% url 'Mapas' %}" class="nav-link">Mapa</a>
+        <a href="{% url 'Armor' %}" class="nav-link">Armor</a>
+        <a href="{% url 'Ammo' %}" class="nav-link">Ammo</a>
+        <a href="{% url 'Bosses' %}" class="nav-link">Bosses</a>
+        <a href="{% url 'login' %}" class="nav-link">login</a>
+        <a href="{% url 'formulario' %}" class="nav-link">formulario</a>
+        <a href="{% url 'api' %}" class="nav-link">api</a>
+
+      
+
+      
+      
+      </nav>
+    <main>
+      <div class="searchBox">
+        <input
+          id="pokemonName"
+          type="Pokemon name"
+          placeholder="Nombre de Pokemon"
+        />
+        <button id="search">🔎</button>
+      </div>
+
+      <div class="pokemonBox"></div>
+    </main>
+    <script src="{% static 'js/api.js' %}"></script>
+
+  </body>
+</html>

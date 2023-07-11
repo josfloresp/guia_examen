@@ -1,0 +1,102 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bosses</title>
+    <link rel="stylesheet" href="{% static 'css/bosses.css' %}">
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div  class="logo">
+            
+            <img src="{% static 'img/Escape-from-Tarkov-Logo.png' %}" alt="logo">
+            <h2 class="nombre-pagina">Bosses</h2> 
+        </div>
+        <nav>
+        <a href="{% url 'index' %}" class="nav-link">Inicio</a>
+        <a href="{% url 'Mapas' %}" class="nav-link">Mapa</a>
+        <a href="{% url 'Armor' %}" class="nav-link">Armor</a>
+        <a href="{% url 'Ammo' %}" class="nav-link">Ammo</a>
+        <a href="{% url 'Bosses' %}" class="nav-link">Bosses</a>
+        <a href="{% url 'login' %}" class="nav-link">login</a>
+        <a href="{% url 'formulario' %}" class="nav-link">formulario</a>
+        <a href="{% url 'api' %}" class="nav-link">api</a>  
+        </nav>
+
+    </header>
+    
+</div>
+<div class="section">
+    <div class="parrafo">
+        <h1>Boss: Tagilla</h1>
+        <p>
+            Tagilla, este boss aparece en el mapa Factory, no esta acompañado por ningun guardia.
+       
+        </p>
+
+    </div>
+    
+    <img src="{% static 'img/Tagilla.jpg' %}" alt="Tagilla">
+</div>
+
+<div class="section">
+    <div class="parrafo">
+        <h1>Boss: Killa</h1>
+        <p>
+            Tagilla, este boss aparece en el mapa Factory, no esta acompañado por ningun guardia.
+       
+        </p>
+
+    </div>
+    
+    <img src="{% static 'img/killa.jpeg' %}" alt="Killa">
+</div>
+<div class="section">
+    <div class="parrafo">
+        <h1>Boss: Glukhar</h1>
+        <p>
+            Glukhar, este boss aparece en dos mapas, no está acompañado de 5 guardias.
+       
+        </p>
+
+    </div>
+    
+    <img src="{% static 'img/gluhar.png' %}" alt="Glukhar">
+</div>
+<div class="section">
+    <div class="parrafo">
+        <h1>Boss: Shturman</h1>
+        <p>
+            Shturman, este boss aparece en woods, no está acompañado de 2 guardias.
+       
+        </p>
+
+    </div>
+    
+    <img src="{% static 'img/shturman.png' %}" alt="shturman">
+</div>
+
+<div class="section">
+    <div class="parrafo">
+        <h1>Boss: Sanitar</h1>
+        <p>
+            Sanitar, este boss aparece en Shorline, no está acompañado de 2 guardias.
+       
+        </p>
+
+    </div>
+    
+    <img src="{% static 'img/sanitar1.png' %}" alt="Sanitar">
+</div>
+
+ 
+
+
+</body>
+</html>

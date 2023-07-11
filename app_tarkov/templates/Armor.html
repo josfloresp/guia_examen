@@ -1,0 +1,82 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'css/stylearmor.css' %}">
+    <title>Tier Armor</title>
+
+    
+        
+    
+    
+  </head>
+  <body>
+      <header>
+          <div  class="logo">
+            
+            <img src="{% static 'img/Escape-from-Tarkov-Logo.png' %}" alt="logo">
+              <h2 class="nombre-pagina">Tier Armor</h2> 
+          </div>
+          <nav>
+              <a href="{% url 'index' %}" class="nav-link">Index</a>
+              <a href="{% url 'Mapas' %}" class="nav-link">Mapas</a>
+              <a href="{% url 'Armor' %}" class="nav-link">Armor</a>
+              <a href="{% url 'Ammo' %}" class="nav-link">Ammo</a>
+              <a href="{% url 'Bosses' %}" class="nav-link">Bosses</a>
+              <a href="{% url 'login' %}" class="nav-link">login</a>
+              <a href="{% url 'formulario' %}" class="nav-link">formulario</a>
+              <a href="{% url 'api' %}" class="nav-link">api</a>
+              
+          </nav>
+  
+  
+  
+      </header>
+      
+  </div>
+  <div class="section">
+      <div class="parrafo">
+          <h1>Armor tier 4</h1>
+          <p>
+            Estas son las mejores armaduras tier 4 que hay en el juego y las mas factibles para comprar.Tambien aparece que parte del cuerpo te cubre.
+         
+          </p>
+  
+      </div>
+      
+      <img src="{% static 'img/tier 4.png' %}" alt="tier 4">
+  </div>
+  
+  <div class="section">
+      <div class="parrafo">
+          <h1>Armor tier 4</h1>
+          <p>
+              Estas son las mejores armaduras tier 5 que hay en el juego y las mas factibles para su uso. Tambien aparece que parte del cuerpo te cubre.
+         
+          </p>
+  
+      </div>
+      
+      <img src="{% static 'img/tier 5.png' %}" alt="tier 5">
+  </div>
+  <div class="section">
+    <div class="parrafo">
+        <h1>Armor tier 6</h1>
+        <p>
+            Estas son las mejores armaduras tier 6 que hay en el juego y las mas factibles para su uso, como ademas las mas dificiles de obtener. Tambien aparece que parte del cuerpo te cubre.
+       
+        </p>
+
+    </div>
+    
+    <img src="{% static 'img/tier 6.png' %}" alt="tier 6">
+</div>
+  
+  
+  </body>
+  </html>

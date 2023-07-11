@@ -1,0 +1,73 @@
+body{ 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #000000;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+
+header{
+  display: flex;
+  min-height: 70px;
+  background-color: white;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+
+}
+.logo{
+  display: flex;
+  align-items: center;
+}
+.logo img{
+  height: 50px;
+  margin-right: 10px;
+}
+nav a{
+  font-weight: 600;
+  padding-right: 10px;
+}
+nav a:hover{
+  color: grey;
+}
+@media (max-width:700){
+  header{
+      flex-direction: column;
+  }
+  nav{
+      padding: 10px 0px;
+  }
+}
+
+
+
+
+.section{
+  background-color: rgb(40, 38, 38);
+  display: center;
+  justify-content: center;
+  padding: 30px;
+  width: 60%;
+  margin: 40px auto;
+  border-radius: 20px;
+  box-shadow: 10px 10px 10px rgb(0, 0, 0,.5);
+
+}
+.section img{
+  width: 100%;
+  border-radius: 10px;
+  border: dashed 3px white;
+
+}
+.section h1{
+  margin: 0;
+  color: white;
+}
+.section p{
+  color: antiquewhite;
+  margin-right: 15px;
+}
